@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+*{
+    font-family: 'Lexend Deca', sans-serif;
+    scroll-behavior: smooth;
+    transition: all .5s;
+}
+
+*::selection{
+    color: black;
+    background-color: #EA2027;
+}
+
+body{
+    background-color: rgb(32, 32, 32);
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #121212;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .1em;
+    transition: 0.25s;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    font-family:Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: .5rem;
+}
+
+h1::selection, h5::selection{
+    color: black;
+    background-color: #EA2027;
+}
+
+h5{
+    font-weight: 500;
+    font-size: 1em;
+    color: white;
+    margin-bottom: .5em;
+    margin-top: 5px;
+}
+
+h5, label{
+    align-items: flex-start;
+}
+
+input{
+    background: none;
+    text-align: center;
+    border: 2px solid #EA2027;
+    padding: 14px 14px;
+    width: 200px;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    outline: none;
+}
+
+input:focus{
+    width: 280px;
+    border-color: #00ff88;
+    transition: 0.25s;
+}
+
+input::selection{
+    color:black;
+    background-color: #00ff88;
+}
+
+.btn-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn{
+    border: 0;
+    background: none;
+    margin: 20px 10px;
+    text-align: center;
+    border: 2px solid #EA2027;
+    padding: 14px 30px;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    outline: none;
+    display: flex;
+}
+
+.btn:hover{
+    border-color: #EA2027;
+    background-color: #EA2027;
+    cursor: pointer;
+}
+
+.form-signup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.25s;
+}
+
+.form-signup{
+    display: none;
+}
+
+.form-login{
+    display: flex;
+}
+
+label{
+    padding-top: 2px;
+    color: #EA2027;
+    font-size: 12px;
+    display: none;
+}
+
+.icon-error{
+    margin: 0;
+    font-size: 17px;
+}
+
