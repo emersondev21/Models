@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Loved+by+the+King&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #252525;
+  font-family: 'Fira Code', monospace;
+  overflow-x: hidden;
+  background-image: url("img/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header{
+  box-sizing: border-box;
+  width: 100vw;
+  height: 70px;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  background-color: #121212;
+  /* font-family: 'Press Start 2P', cursive; */
+  justify-content: space-around;
+  position: sticky;
+}
+
+.logo{
+  height: 40px;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+ul{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  font-size: 20px;
+  justify-items: center; 
+  list-style: none;
+} 
+
+#btn-mobile {
+  display: none;
+  color: white;
+}
+
+.header3{
+  display: none;
+}
+
+.page{
+  padding: 0;
+  margin: 0;
+  top: 70px;
+  width: 100vw;
+  background-color: #5f27cd;
+}
+
+.section{
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#section1{
+  background-color: #ff6b6b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Press Start 2P', cursive;
+}
+#section2{
+  background-color: #5f27cd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Loved by the King', cursive;
+}
+#section3{
+  background-color: #ff9f43;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Architects Daughter', cursive;
+}
+#section4{
+  background-color: #10ac84;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+#section5{
+  background-color: #f368e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Love Ya Like A Sister', cursive;
+}
+
+
+
+
+
+@media (max-width: 950px) {
+  .header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header2 :not(ion-icon){
+    display: none;
+  }
+
+  .header3{
+    height: 50px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #121212;
+  }
+
+}
+
+
+
+
+@media (max-width: 850px) {
+
+  *{
+    transition: 0.3s;
+  }
+
+  .header{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .header3{
+    display: none;
+  }
+  .header3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;    
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: #252525;
+    transition: 0.6s;
+    z-index: 1000;
+    width: 100vw;
+    height: 0px;
+    align-items: center;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  
+  #nav.active #menu {
+    width: 100vw;
+    height: calc(100vh - 70px);
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: auto;
+  }
+  
+  #menu a {
+    align-items: center;
+    padding: 1rem 0;
+    margin: 0 1rem;
+    width: 100vw;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
