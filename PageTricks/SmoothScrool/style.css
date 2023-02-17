@@ -17,6 +17,27 @@
   scroll-behavior: smooth;
 }
 
+/* estilo da barra de rolagem */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* estilo do thumb (o botão que pode ser arrastado) */
+::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 5px;
+}
+
+/* estilo do thumb quando o mouse está sobre ele */
+::-webkit-scrollbar-thumb:hover {
+  background-color: none;
+} 
+
+/* estilo do track (a área onde o thumb se move) */
+::-webkit-scrollbar-track {
+  background-color: #121212;
+}
+
 body{
   background-color: #252525;
   font-family: 'Fira Code', monospace;
@@ -40,7 +61,6 @@ header{
   align-items: center;
   color: white;
   background-color: #121212;
-  /* font-family: 'Press Start 2P', cursive; */
   justify-content: space-around;
   position: sticky;
 }
@@ -53,7 +73,7 @@ a {
   text-decoration: none;
   display: inline-block;
   position: relative;
-  color: #0087ca;
+  color: #f1f1f1;
 }
 
 a::after {
@@ -64,23 +84,27 @@ a::after {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #0087ca;
+  color: #0087ca;
+  background-color: #f1f1f1;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
 
 a:hover::after {
+  color: #0087ca;
   transform: scaleX(1);
   transform-origin: bottom left;
 }
 
+
 ul{
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 3rem;
   font-size: 20px;
   justify-items: center; 
   list-style: none;
+  user-select: none;
 } 
 
 #btn-mobile {
@@ -116,8 +140,9 @@ ul{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Fira Code', monospace;
 }
+
 #section2{
   background-color: #5f27cd;
   display: flex;
@@ -126,34 +151,46 @@ ul{
   justify-content: center;
   font-family: 'Loved by the King', cursive;
 }
+
 #section3{
   background-color: #ff9f43;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: 'Architects Daughter', cursive;
+  font-family: 'Fira Code', monospace;
 }
+
 #section4{
   background-color: #10ac84;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Fira Code', monospace;
 }
+
 #section5{
   background-color: #f368e0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: 'Love Ya Like A Sister', cursive;
+  font-family: 'Fira Code', monospace;
 }
 
-
-
-
+#scroll-to-top {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  display: none;
+  outline: none;
+  cursor: pointer;
+  background-image: url("img/icons8-scroll-up-48.png");
+}
 
 @media (max-width: 950px) {
   .header{
@@ -173,11 +210,7 @@ ul{
     justify-content: space-around;
     background-color: #121212;
   }
-
 }
-
-
-
 
 @media (max-width: 850px) {
 
