@@ -51,7 +51,7 @@ form h1::selection{
     caret-color: #0652dd;
     border-color: #0652dd;
 }
- .box input[type=submit]{
+.box input[type=button]{
     border: 0;
     background: none;
     display: block;
@@ -64,10 +64,10 @@ form h1::selection{
     transition: 0.25s;
     outline: none;
 
- }
+}
 
- .box input[type=submit]:hover{
-     border-color: #EA2027;
-     background-color: #EA2027;
-     cursor: pointer;
- }
+.box input[type=button]:hover{
+    border-color: #EA2027;
+    background-color: #EA2027;
+    cursor: pointer;
+}
