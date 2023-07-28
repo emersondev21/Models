@@ -1,0 +1,16 @@
+Criar usuário: 
+
+sudo adduser 'nome que quer colocar' (tudo minúsculo)
+ 
+	- toda vez que tu usar o comando "sudo", o sistema vai pedir a senha do usuário, que é a mesma que tu inseriu na instalação
+	- vai pedir pra criar uma senha para o usuário novo (duas vezes pra confirmar)
+	- pede mais algumas informações, porém são opcionais, o que importa é o nome do usuário e a senha, então é só ficar apertando 'enter' até aparecer uma mensagem perguntando se as informações estão corretas
+	- digita 'y' pra confirmar
+
+Verificar os usuários criados:
+
+getent passwd
+
+	- aparecerá uma lista grandona
+	- os usuários criados recentemente aparecerão no final da lista
+
