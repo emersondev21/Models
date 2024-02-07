@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Tilt+Neon&display=swap');
+
+body {
+  background-image: url(assets/img/wallhaven-x6wjkv.png);
+  background-size: cover;
+}
+
+.nav {
+  width: auto;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  justify-content: center;
+  background-color: #222;
+  height: 60px;
+  padding-inline: 1.8rem;
+  list-style: none;
+  border-radius: 0.5rem;
+  color: white;
+  font-family: 'Tilt Neon', sans-serif;
+}
+
+.logo {
+  transition: opacity 300ms ease;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.item {
+  position: relative;
+  font-size: 1rem;
+}
+
+.item::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  height: 2px;
+  width: 100%;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: all 0.6s ease;
+}
+
+.item:hover::before {
+  transform: scaleX(1);
+}
+
+.item:hover {
+  opacity: 0.5s;
+}
