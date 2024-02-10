@@ -1,0 +1,24 @@
+window.sr = ScrollReveal({ reset: true });
+
+sr.reveal('.Astra', { duration: 2000 });
+sr.reveal('.Breach', { duration: 2000 });
+sr.reveal('.Brimstone', { duration: 2000 });
+sr.reveal('.Chamber', { duration: 2000 });
+sr.reveal('.Cypher', { duration: 2000 });
+sr.reveal('.Fade', { duration: 2000 });
+sr.reveal('.Harbor', { duration: 2000 });
+sr.reveal('.Gekko', { duration: 2000 });
+sr.reveal('.Iso', { duration: 2000 });
+sr.reveal('.Jett', { duration: 2000 });
+sr.reveal('.Kayo', { duration: 2000 });
+sr.reveal('.killjoy', { duration: 2000 });
+sr.reveal('.Neon', { duration: 2000 });
+sr.reveal('.Omen', { duration: 2000 });
+sr.reveal('.Phoenix', { duration: 2000 });
+sr.reveal('.Raze', { duration: 2000 });
+sr.reveal('.Reyna', { duration: 2000 });
+sr.reveal('.Sage', { duration: 2000 });
+sr.reveal('.Skye', { duration: 2000 });
+sr.reveal('.Sova', { duration: 2000 });
+sr.reveal('.Viper', { duration: 2000 });
+sr.reveal('.Yoru', { duration: 2000 });
