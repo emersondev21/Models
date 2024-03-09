@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  width: 25em;
+  height: 100vh;
+  background-color: purple;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: blueviolet;
+  width: 20em;
+  height: 90vh;
+}
+
+.profile {
+  padding: 5px;
+  border-bottom: 2px solid black;
+  display: flex;
+  gap: 2rem;
+}
+
+img {
+  width: 80px;
+  border-radius: 50px;
+}
