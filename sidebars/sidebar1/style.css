@@ -22,7 +22,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 25em;
+  width: 0;
   height: 100vh;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8px);
